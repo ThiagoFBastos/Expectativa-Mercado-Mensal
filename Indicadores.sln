@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35013.160
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Indicadores", "Indicadores\Indicadores.csproj", "{2D819131-C073-46BD-A896-6DA541BF605E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2D819131-C073-46BD-A896-6DA541BF605E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D819131-C073-46BD-A896-6DA541BF605E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D819131-C073-46BD-A896-6DA541BF605E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D819131-C073-46BD-A896-6DA541BF605E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {230A3006-00CB-4F26-B69A-D7FF0CFDFCD4}
+	EndGlobalSection
+EndGlobal

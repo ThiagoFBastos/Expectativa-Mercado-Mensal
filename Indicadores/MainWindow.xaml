@@ -1,0 +1,85 @@
+﻿<Window x:Class="Indicadores.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Indicadores"
+        mc:Ignorable="d"
+        Title="Indicadores" Height="auto" Width="800" Margin="10,10,10,10" Background="White">
+    <Border Padding="20" BorderThickness="3">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="300" />
+                <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
+            </Grid.RowDefinitions>
+
+            <Border Grid.Row="0" Padding="5">
+                <StackPanel>
+                    <Label Target="{Binding ElementName=Indicador}" HorizontalAlignment="Center">Indicador</Label>
+                    <ComboBox Text="{Binding Indicador}" Name ="Indicador" Width="300" HorizontalAlignment="Center">
+                        <ComboBoxItem>IPCA</ComboBoxItem>
+                        <ComboBoxItem>IGP-M</ComboBoxItem>
+                        <ComboBoxItem>Selic</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="1" Padding="5">
+                <StackPanel>
+                    <Label Target="{Binding ElementName=DataInicial}" HorizontalAlignment="Center">Data Inicial</Label>
+                    <DatePicker SelectedDate="{Binding DataInicial}" x:Name="DataInicial" SelectedDateFormat="Short" Width="300" HorizontalAlignment="Center">
+
+                    </DatePicker>
+                </StackPanel>
+            </Border>
+
+            <Border Grid.Row="2">
+                <StackPanel>
+                    <Label Target="{Binding ElementName=DataFinal}" HorizontalAlignment="Center">Data Final</Label>
+                    <DatePicker SelectedDate="{Binding DataFinal}"  x:Name="DataFinal" SelectedDateFormat="Short" Width="300" HorizontalAlignment="Center">
+
+                    </DatePicker>
+                </StackPanel>
+            </Border>
+
+            <Border Padding="5" Grid.Row="3">
+                <Button Command="{Binding ClickFilterExpectativasCommand}" HorizontalAlignment="Center" x:Name="Filtrar" Width="100">Filtrar
+                </Button>
+            </Border>
+
+            <Border Padding="5" Grid.Row="4">
+                <DataGrid AlternatingRowBackground="Gray" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto" AutoGenerateColumns="False" ItemsSource="{Binding Expectativas}" x:Name="Expectativas" CanUserDeleteRows="False" CanUserReorderColumns="False" CanUserAddRows="False" IsReadOnly="True">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Indicador" Binding="{Binding Indicador}"/>
+                        <DataGridTextColumn Header="Data" Binding="{Binding Data}"/>
+                        <DataGridTextColumn Header="Data de Referência" Binding="{Binding DataReferencia}"/>
+                        <DataGridTextColumn Header="Média" Binding="{Binding Media}"/>
+                        <DataGridTextColumn Header="Mediana" Binding="{Binding Mediana}"/>
+                        <DataGridTextColumn Header="Desvio Padrão" Binding="{Binding DesvioPadrao}"/>
+                        <DataGridTextColumn Header="Mínimo" Binding="{Binding Minimo}"/>
+                        <DataGridTextColumn Header="Máximo" Binding="{Binding Maximo}"/>
+                        <DataGridTextColumn Header="Número Respondentes" Binding="{Binding numeroRespondentes}"/>
+                        <DataGridTextColumn Header="Base Cálculo" Binding="{Binding baseCalculo}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </Border>
+
+            <Border Padding="5" Grid.Row="5">
+                <Button Background="DarkBlue" Foreground="White" HorizontalAlignment="Center" Height="30" Width="100" Command="{Binding ExportCSVCommand}">Exportar para CSV</Button>
+            </Border>
+
+            <Border Grid.Row="6" Padding="5">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Button Width="100" Command="{Binding PreviousFilterExpectativasCommand}">Anterior</Button>
+                    <TextBox IsReadOnly="True" Text="{Binding PageIndex}"></TextBox>
+                    <Button Width="100" Command="{Binding NextFilterExpectativasCommand}">Próximo</Button>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Border>
+</Window>
