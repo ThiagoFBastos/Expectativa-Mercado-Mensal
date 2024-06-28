@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\thiag\\OneDrive\\Documentos\\Indicadores\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2D819131-C073-46BD-A896-6DA541BF605E}|Indicadores\\Indicadores.csproj|c:\\users\\thiag\\onedrive\\documentos\\indicadores\\indicadores\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{2D819131-C073-46BD-A896-6DA541BF605E}|Indicadores\\Indicadores.csproj|solutionrelative:indicadores\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2D819131-C073-46BD-A896-6DA541BF605E}|Indicadores\\Indicadores.csproj|c:\\users\\thiag\\onedrive\\documentos\\indicadores\\indicadores\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2D819131-C073-46BD-A896-6DA541BF605E}|Indicadores\\Indicadores.csproj|solutionrelative:indicadores\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +23,24 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\thiag\\OneDrive\\Documentos\\Indicadores\\Indicadores\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Indicadores\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\thiag\\OneDrive\\Documentos\\Indicadores\\Indicadores\\MainWindow.xaml",
+              "RelativeToolTip": "Indicadores\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-06-28T15:11:47.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "MainViewModel.cs",
               "DocumentMoniker": "C:\\Users\\thiag\\OneDrive\\Documentos\\Indicadores\\Indicadores\\ViewModels\\MainViewModel.cs",
               "RelativeDocumentMoniker": "Indicadores\\ViewModels\\MainViewModel.cs",
               "ToolTip": "C:\\Users\\thiag\\OneDrive\\Documentos\\Indicadores\\Indicadores\\ViewModels\\MainViewModel.cs",
               "RelativeToolTip": "Indicadores\\ViewModels\\MainViewModel.cs",
-              "ViewState": "AQIAAH0AAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAAAIsAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-06-28T02:07:26.66Z",
               "EditorCaption": ""

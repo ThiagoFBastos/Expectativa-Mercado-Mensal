@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Indicadores"
         mc:Ignorable="d"
-        Title="Indicadores" Height="auto" Width="800" Margin="10,10,10,10" Background="White">
+        Title="Indicadores" Height="650" Width="800" Margin="10,10,10,10" Background="White">
     <Border Padding="20" BorderThickness="3">
         <Grid>
             <Grid.RowDefinitions>

@@ -18,3 +18,4 @@ C:\Users\thiag\OneDrive\Documentos\Indicadores\Indicadores\obj\Debug\net8.0-wind
 C:\Users\thiag\OneDrive\Documentos\Indicadores\Indicadores\obj\Debug\net8.0-windows\ref\Indicadores.dll
 C:\Users\thiag\OneDrive\Documentos\Indicadores\Indicadores\obj\Debug\net8.0-windows\MainWindow.g.cs
 C:\Users\thiag\OneDrive\Documentos\Indicadores\Indicadores\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\thiag\OneDrive\Documentos\Indicadores\Indicadores\obj\Debug\net8.0-windows\Indicadores.sourcelink.json
